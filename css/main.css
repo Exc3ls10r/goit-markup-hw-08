@@ -703,12 +703,19 @@ body {
 }
 
 .devteam__title {
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   letter-spacing: 0.03em;
   margin-top: 0;
   color: var(--text-color-second);
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .devteam__title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.03em;
+  }
 }
 
 .devteam__list {
@@ -813,15 +820,30 @@ body {
 }
 
 .clients {
-  padding-top: 33px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.clients-title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.1666666667;
-  text-align: center;
+.clients__title {
+  font-size: 28px;
+  line-height: 1.1785714286;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  color: var(--text-color-second);
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.03em;
+  }
 }
 
 .clients-list {

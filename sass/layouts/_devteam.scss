@@ -10,9 +10,13 @@
 }
 
 .devteam__title {
-  @include font (36px, calc(42 / 36), null, .03em);
+  @include font (28px, calc(33 / 28), null, .03em);
   @include title;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 1200px) {
+    @include font (36px, calc(42 / 36), null, .03em);
+  }
 }
 
 .devteam__list {
