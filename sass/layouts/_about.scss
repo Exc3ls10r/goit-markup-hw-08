@@ -19,14 +19,7 @@
   margin-bottom: 0;
 
   display: flex;
-}
-
-.about__item {
-  margin-right: 30px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  gap: 30px;
 }
 
 .about__thumb {
