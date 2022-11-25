@@ -1,0 +1,40 @@
+@mixin font ($size, $height, $weight, $spacing) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  letter-spacing: $spacing;
+}
+
+@mixin flex-center ($display: flex, $justify-content: center, $align-items: center) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin section ($padding-top: 60px, $padding-bottom: 60px) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+}
+
+// ======== COMMON ========
+
+@mixin text ($color: var(--text-color-main)) {
+  margin-top: 0;
+  color: $color;
+}
+
+@mixin title ($color: var(--text-color-second)) {
+  margin-top: 0;
+  color: $color;
+}
+
+@mixin list {
+  margin-top: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+@mixin button {
+  cursor: pointer;
+}
