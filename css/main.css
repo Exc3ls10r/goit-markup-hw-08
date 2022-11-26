@@ -899,6 +899,21 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--bgc-hero);
+  text-align: center;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
 }
 
 .address {
@@ -913,10 +928,11 @@ body {
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   margin-bottom: 0;
+  margin-top: 28px;
 }
 
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 }
 
 .address__link {
@@ -984,6 +1000,10 @@ body {
   fill: currentColor;
 }
 
+.subscription {
+  width: 100%;
+}
+
 .subscription__invitation {
   margin-top: 0;
   margin-bottom: 20px;
@@ -993,6 +1013,16 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color-hero);
+}
+
+.subscription__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .subscription__input {
@@ -1048,7 +1078,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   gap: 10px;
+  margin-top: 20px;
   padding: 0;
   min-width: 200px;
   height: 50px;

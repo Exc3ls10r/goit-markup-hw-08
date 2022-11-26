@@ -2,12 +2,22 @@
   @include section;
 
   background-color: var(--bgc-hero);
+  text-align: center;
 }
 
 .footer__wrapper {
-  // display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  // justify-content: center;
   // align-items: baseline;
 }
+
+// .address__wrapper {
+//   @include flex-center (flex, center, null);
+//   flex-direction: column;
+// }
 
 .address {
   @include address;
@@ -17,10 +27,11 @@
   @include list;
   @include font (14px, calc(24 / 14), null, .03em);
   margin-bottom: 0;
+  margin-top: 28px;
 }
 
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 }
 
 .address__link {
@@ -88,9 +99,9 @@
   fill: currentColor;
 }
 
-// .subscription {
-//   margin-left: auto;
-// }
+.subscription {
+  width: 100%;
+}
 
 .subscription__invitation {
   margin-top: 0;
@@ -101,9 +112,10 @@
   color: var(--text-color-hero);
 }
 
-// .subscription__form {
-//   display: flex;
-// }
+.subscription__form {
+  display: flex;
+  flex-direction: column;
+}
 
 .subscription__input {
   width: 100%;
@@ -128,7 +140,9 @@
 
 .subscription__button {
   @include flex-center;
+  align-self: center;
   gap: 10px;
+  margin-top: 20px;
   padding: 0;
 
   min-width: 200px;
