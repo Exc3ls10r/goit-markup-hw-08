@@ -902,6 +902,18 @@ body {
   text-align: center;
 }
 
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 60px;
+  -webkit-column-gap: 165px;
+     -moz-column-gap: 165px;
+          column-gap: 165px;
+}
+
 .address__wrapper {
   margin-bottom: 60px;
 }
