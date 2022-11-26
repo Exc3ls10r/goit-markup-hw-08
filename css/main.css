@@ -56,10 +56,6 @@ body {
   cursor: pointer;
 }
 
-.address {
-  font-style: normal;
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -373,6 +369,25 @@ body {
   background-color: #188ce8;
 }
 
+.logo {
+  display: block;
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.1923076923;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+.logo--dark-end {
+  color: #000000;
+}
+
+.logo--light-end {
+  color: var(--text-color-hero);
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -384,24 +399,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.logo {
-  display: block;
-  margin-right: 93px;
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
-  letter-spacing: 0.03em;
-}
-
-.logo-accent {
-  color: var(--accent-color);
-}
-
-.header .logo-contrast {
-  color: #000000;
 }
 
 .nav-list {
@@ -904,57 +901,39 @@ body {
   background-color: var(--bgc-hero);
 }
 
-.footer-pos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+.address {
+  font-style: normal;
 }
 
-.footer .logo {
-  margin-bottom: 20px;
-}
-
-.footer .logo-contrast {
-  color: var(--text-color-hero);
-}
-
-.address-list {
-  margin-bottom: 0;
+.address__list {
+  margin-top: 0;
+  padding-left: 0;
+  list-style: none;
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
+  margin-bottom: 0;
 }
 
-.footer .address-item + .address-item {
-  margin-top: 9px;
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
-.address-link {
-  color: var(--text-color-hero);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.address-link:hover, .address-link:focus {
-  color: var(--accent-color);
-}
-
-.cont-link {
+.address__link {
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.cont-link:hover, .cont-link:focus {
+.address__link:hover, .address__link:focus {
   color: var(--accent-color);
 }
 
-.footer-social-container {
-  margin-left: 70px;
+.address__link--lighter {
+  color: var(--text-color-hero);
 }
 
-.footer-social-text {
+.our-social__invitation {
   margin-top: 0;
   margin-bottom: 20px;
   font-weight: 700;

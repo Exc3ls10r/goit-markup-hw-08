@@ -1,0 +1,16 @@
+.logo {
+  display: block;
+
+  font-family: "Raleway";
+  @include font (26px, calc(31 / 26), 700, .03em);
+  @include link;
+  color: var(--accent-color);
+}
+
+.logo--dark-end {
+  color: #000000;
+}
+
+.logo--light-end {
+  color: var(--text-color-hero);
+}

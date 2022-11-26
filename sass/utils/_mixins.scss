@@ -38,3 +38,11 @@
 @mixin button {
   cursor: pointer;
 }
+
+@mixin link {
+  text-decoration: none;
+}
+
+@mixin address {
+  font-style: normal;
+}
