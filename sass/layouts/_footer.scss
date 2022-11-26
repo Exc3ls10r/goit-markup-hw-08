@@ -46,24 +46,27 @@
   margin-top: 0;
   margin-bottom: 20px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
+  @include font (14px, calc(16 / 14), 700, .03em);
   text-transform: uppercase;
   color: var(--text-color-hero);
 }
 
-.footer-social-list {
+.our-social__list {
+  @include list;
   margin-bottom: 0;
   display: flex;
 }
 
-.footer-social-list>li+li {
-  margin-left: 10px;
+.our-social__item:not(:last-child) {
+  margin-right: 10px;
 }
 
-.footer-social-link {
+
+// .our-social__list>li+li {
+//   margin-left: 10px;
+// }
+
+.our-social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,32 +84,29 @@
   }
 }
 
-.footer-social-icon {
+.our-social__icon {
   fill: currentColor;
 }
 
-.subscription {
-  margin-left: auto;
-}
+// .subscription {
+//   margin-left: auto;
+// }
 
-.footer-subscription-text {
+.subscription__invitation {
   margin-top: 0;
   margin-bottom: 20px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
+  @include font (14px, calc(16 / 14), 700, .03em);
   text-transform: uppercase;
   color: var(--text-color-hero);
 }
 
-.footer-form {
-  display: flex;
-}
+// .subscription__form {
+//   display: flex;
+// }
 
-.footer-input {
-  width: 358px;
+.subscription__input {
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   margin-right: 12px;
@@ -126,10 +126,8 @@
   }
 }
 
-.subscription-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.subscription__button {
+  @include flex-center;
   gap: 10px;
   padding: 0;
 
@@ -142,15 +140,18 @@
   border: none;
 
   color: var(--text-color-hero);
+
+  @include button;
 }
 
-.subscription-btn-text {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
+.subscription__label {
+  @include font (16px, calc(30 / 16), 700, .06em);
+  // font-weight: 700;
+  // font-size: 16px;
+  // line-height: calc(30 / 16);
+  // letter-spacing: 0.06em;
 }
 
-.footer-subscription-icon {
+.subscription__icon {
   fill: currentColor;
 }
