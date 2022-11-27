@@ -58,6 +58,7 @@
       width: 480px;
       margin-left: auto;
       margin-right: auto;
+      height: 100%;
     }
   }
 
@@ -91,6 +92,46 @@
 
   &:hover, &:focus {
     color: var(--accent-color);
+  }
+}
+
+.contact-list {
+  @include list;
+  margin-bottom: 0;
+
+  display: flex;
+  flex-direction: column-reverse;
+  // gap: 32px;
+}
+
+.contact-item.c-mail {
+  @media screen and (max-width: 767px) {
+    margin-top: 32px;
+    margin-bottom: 64px;
+  }
+}
+
+.contact-link {
+  @include link;
+
+  &.c-tel {
+    @include font (34px, calc(40 / 34), 500, .02em);
+    font-weight: 500;
+    color: var(--accent-color);
+  }
+
+  &.c-mail {
+    @include font (24px, calc(28 / 24), 500, .02em);
+    font-weight: 500;
+    color: var(--text-color-main);
+
+    
+  }
+}
+
+.contact-icon {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 
