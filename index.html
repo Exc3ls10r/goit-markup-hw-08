@@ -25,7 +25,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-position">
+        <div class="header__wrapper">
           <a href="./index.html" class="logo"> Web<span class="logo--dark-end">Studio</span></a>
 
           <button
@@ -33,45 +33,22 @@
             class="menu-button"
             aria-expanded="false"
             aria-controls="menu-container"
-            data-menu-button>
-            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
               <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
               <use class="icon-menu" href="./images/icons.svg#icon-menu-burger"></use>
             </svg>
           </button>
 
-          <nav class="main-navigation">
-            <ul class="nav-list list">
-              <li class="nav-item">
-                <a href="./index.html" class="nav-link link curent">Студія</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link link">Портфоліо</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link link">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-
-          <ul class="contact-list list">
-            <li class="contact-item">
-              <a href="mailto:info@devstudio.com" class="contact-link link">
-                <svg class="contact-icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="contact-item">
-              <a href="tel:+380961111111" class="contact-link link">
-                <svg class="contact-icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+          <div class="menu-container" id="menu-container" data-menu>
+            <div class="navigation"></div>
+            <div class="contacts"></div>
+          </div>
         </div>
       </div>
     </header>
@@ -509,5 +486,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
