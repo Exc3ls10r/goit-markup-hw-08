@@ -105,8 +105,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-height: 581px;
-  width: 528px;
+  width: 450px;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 40px;
@@ -121,6 +120,11 @@ body {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .btn-modal-close {
@@ -331,10 +335,16 @@ body {
 }
 
 .form-agree-label {
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--text-color-main);
+}
+@media screen and (min-width: 1200px) {
+  .form-agree-label {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .form-agree-link {
