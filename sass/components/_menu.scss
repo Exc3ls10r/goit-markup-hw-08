@@ -6,6 +6,7 @@
   background-color: transparent;
 // ========
   z-index: 5;
+  
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -39,12 +40,24 @@
     // top: 100%;
     top: 0;
     height: 100vh;
-    // overflow: hidden;
+    // overflow: ;
     position: fixed;
 
     &.is-open {
       display: block;
+      overflow: hidden;
+      
+    }
+
+    &.is-open > .menu-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       padding: 48px 40px;
+
+      width: 480px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -52,19 +65,45 @@
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
+
+    height: 100%;
   }
 }
 
-.navigation,
-.contacts {
-  height: 50px;
-  width: 140px;
+.nav-list {
+  @include list;
+  margin-bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
-.navigation {
-  outline: 1px solid teal;
+// .nav-item:not(:last-child) {
+//   margin-bottom: 32px;
+// }
+
+.nav-link {
+  @include link;
+  @include font (40px, calc(47 / 40), 500, .02em);
+
+  color: var(--text-color-second);
+
+  &:hover, &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.contacts {
-  outline: 1px solid orange;
-}
+// .navigation,
+// .contacts {
+//   height: 50px;
+//   width: 140px;
+// }
+
+// .navigation {
+//   outline: 1px solid teal;
+// }
+
+// .contacts {
+//   outline: 1px solid orange;
+// }
