@@ -33,101 +33,70 @@
             class="menu-button"
             aria-expanded="false"
             aria-controls="menu-container"
-            data-menu-button
-          >
-            <svg
-              width="40"
-              height="40"
-              aria-label="Переключатель мобильного меню"
-              class="menu-switch"
-            >
+            data-menu-button>
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню" class="menu-switch">
               <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
               <use class="icon-menu" href="./images/icons.svg#icon-menu-burger"></use>
             </svg>
           </button>
 
           <div class="menu-container" id="menu-container" data-menu>
-            <div class="menu-wrapper">
-              <nav class="naw-wrapper">
-                <ul class="nav-list">
-                  <li class="nav-item">
-                    <a href="./index.html" class="nav-link curent">Студія</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./portfolio.html" class="nav-link">Портфоліо</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="" class="nav-link">Контакти</a>
-                  </li>
-                </ul>
-              </nav>
-  
-              <ul class="contact-list">
-                <li>
-                  <ul class="menu-soc-list">
-                    <li class="menu-soc-item">
-                      <a
-                        href=""
-                        target="_blank"
-                        rel="noopener nofollow noreferrer"
-                        class="menu-soc-link"
-                        >Instagram</a
-                      >
+            <div class="menu__wrapper">
+              <div class="nav-cont">
+                <nav>
+                  <ul class="nav__list">
+                    <li>
+                      <a href="./index.html" class="nav__link curent">Студія</a>
                     </li>
-                    <li class="menu-soc-item">
-                      <a
-                        href=""
-                        target="_blank"
-                        rel="noopener nofollow noreferrer"
-                        class="menu-soc-link"
-                        >Twitter</a
-                      >
+                    <li>
+                      <a href="./portfolio.html" class="nav__link">Портфоліо</a>
                     </li>
-                    <li class="menu-soc-item">
-                      <a
-                        href=""
-                        target="_blank"
-                        rel="noopener nofollow noreferrer"
-                        class="menu-soc-link"
-                        >Facebook</a
-                      >
-                    </li>
-                    <li class="menu-soc-item">
-                      <a
-                        href=""
-                        target="_blank"
-                        rel="noopener nofollow noreferrer"
-                        class="menu-soc-link"
-                        >LinkedIn</a
-                      >
+                    <li>
+                      <a href="" class="nav__link">Контакти</a>
                     </li>
                   </ul>
+                </nav>
+  
+                <ul class="contact__list">
+                  <li>
+                    <a href="mailto:info@devstudio.com" class="contact-link c-mail">
+                      <svg class="contact-icon-t" width="14" height="10">
+                        <use href="./images/icons.svg#icon-envelope"></use>
+                      </svg>
+                      <svg class="contact-icon-d" width="16" height="12">
+                        <use href="./images/icons.svg#icon-envelope"></use>
+                      </svg>
+                      info@devstudio.com</a
+                    >
+                  </li>
+                  <li>
+                    <a href="tel:+380961111111" class="contact-link c-tel">
+                      <svg class="contact-icon-t" width="10" height="14">
+                        <use href="./images/icons.svg#icon-smartphone"></use>
+                      </svg>
+                      <svg class="contact-icon-d" width="10" height="16">
+                        <use href="./images/icons.svg#icon-smartphone"></use>
+                      </svg>
+                      +38 096 111 11 11
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="menu-soc-list">
+                <li class="menu-soc-item">
+                  <a href="" target="_blank" rel="noopener nofollow noreferrer" class="menu-soc-link">Instagram</a>
                 </li>
-
-                <li class="contact-item c-mail">
-                  <a href="mailto:info@devstudio.com" class="contact-link c-mail">
-                    <svg class="contact-icon" width="16" height="12">
-                      <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com</a
-                  >
+                <li class="menu-soc-item">
+                  <a href="" target="_blank" rel="noopener nofollow noreferrer" class="menu-soc-link">Twitter</a>
                 </li>
-                <li class="contact-item">
-                  <a href="tel:+380961111111" class="contact-link c-tel">
-                    <svg class="contact-icon" width="10" height="16">
-                      <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11
-                  </a>
+                <li class="menu-soc-item">
+                  <a href="" target="_blank" rel="noopener nofollow noreferrer" class="menu-soc-link">Facebook</a>
                 </li>
-                
+                <li class="menu-soc-item">
+                  <a href="" target="_blank" rel="noopener nofollow noreferrer" class="menu-soc-link">LinkedIn</a>
+                </li>
               </ul>
-
-              
             </div>
-
-            <!-- <div class="navigation"></div>
-            <div class="contacts"></div> -->
           </div>
         </div>
       </div>
@@ -237,7 +206,6 @@
                 srcset="./images/webstudio-team-1.jpg 1x, ./images/webstudio-team-1@2x.jpg 2x"
                 src="./images/webstudio-team-1.jpg"
                 alt="Ігор Дем'яненко Product Designer"
-                
                 class="webteam-photo" />
               <div class="webteam-caption">
                 <h3 class="webteam-name title">Ігор Дем'яненко</h3>
@@ -277,7 +245,6 @@
                 srcset="./images/webstudio-team-2.jpg 1x, ./images/webstudio-team-2@2x.jpg 2x"
                 src="./images/webstudio-team-2.jpg"
                 alt="Ольга Рєпіна Frontend Developer"
-                
                 class="webteam-photo" />
               <div class="webteam-caption">
                 <h3 class="webteam-name title">Ольга Рєпіна</h3>
@@ -317,7 +284,6 @@
                 srcset="./images/webstudio-team-3.jpg 1x, ./images/webstudio-team-3@2x.jpg 2x"
                 src="./images/webstudio-team-3.jpg"
                 alt="Микола Тарасов Marketing"
-                
                 class="webteam-photo" />
               <div class="webteam-caption">
                 <h3 class="webteam-name title">Микола Тарасов</h3>
@@ -357,7 +323,6 @@
                 srcset="./images/webstudio-team-4.jpg 1x, ./images/webstudio-team-4@2x.jpg 2x"
                 src="./images/webstudio-team-4.jpg"
                 alt="Михайло Єрмаков UI Designer"
-                
                 class="webteam-photo" />
               <div class="webteam-caption">
                 <h3 class="webteam-name title">Михайло Єрмаков</h3>
