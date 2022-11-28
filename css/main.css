@@ -136,7 +136,10 @@ body.modal-open {
 }
 @media screen and (min-width: 280px) and (max-width: 479px) {
   .modal {
-    width: calc(100% - 30px);
+    width: calc(100% - 20px);
+    top: 0;
+    -webkit-transform: translate(-50%, 0%) scale(1);
+            transform: translate(-50%, 0%) scale(1);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -581,10 +584,12 @@ body.modal-open {
   }
 }
 
+.curent {
+  color: var(--accent-color);
+}
 @media screen and (min-width: 768px) {
   .curent {
     position: relative;
-    color: var(--accent-color);
   }
   .curent::after {
     content: "";
