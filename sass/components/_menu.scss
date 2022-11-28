@@ -6,10 +6,18 @@
   background-color: transparent;
 // ========
   z-index: 5;
+  @include button;
+  
   
 
   @media screen and (min-width: 768px) {
     display: none;
+  }
+}
+
+.menu-switch {
+  &:hover, &:focus {
+    fill: var(--accent-color);
   }
 }
 

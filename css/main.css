@@ -412,11 +412,16 @@ body.modal-open {
   border: none;
   background-color: transparent;
   z-index: 5;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
+}
+
+.menu-switch:hover, .menu-switch:focus {
+  fill: var(--accent-color);
 }
 
 .menu-button .icon-cross {
