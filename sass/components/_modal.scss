@@ -8,6 +8,9 @@ body.modal-open {
   left: 50%;
   // min-height: 581px;
   width: 450px;
+
+  z-index: 10;
+
   @media screen and (min-width: 1200px) {
     width: 528px;
   }
