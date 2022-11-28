@@ -27,6 +27,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -438,6 +444,7 @@ body.modal-open {
 
 .menu-container {
   background-color: #ffffff;
+  overflow-y: scroll;
 }
 @media screen and (max-width: 767px) {
   .menu-container {
@@ -451,7 +458,6 @@ body.modal-open {
   }
   .menu-container.is-open {
     display: block;
-    overflow: hidden;
   }
   .menu-container.is-open > .menu-wrapper {
     display: -webkit-box;
