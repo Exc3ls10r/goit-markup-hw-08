@@ -10,7 +10,10 @@
   @include title;
   @include font (36px, calc(42 / 36), null, .03em);
 
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
   text-align: center;
 }
 

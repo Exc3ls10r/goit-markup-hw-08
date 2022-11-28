@@ -9,7 +9,10 @@
 .clients__title {
   @include font (28px, calc(33 / 28), null, .03em);
   @include title;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
   text-align: center;
 
   @media screen and (min-width: 1200px) {

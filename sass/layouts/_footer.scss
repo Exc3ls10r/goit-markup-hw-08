@@ -38,13 +38,14 @@
 
 .address {
   @include address;
+  margin-top: 28px;
 }
 
 .address__list {
   @include list;
   @include font (14px, calc(16 / 14), null, .03em);
   margin-bottom: 0;
-  margin-top: 28px;
+  
 }
 
 .address__item:not(:last-child) {
