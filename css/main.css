@@ -437,7 +437,7 @@ body.modal-open {
 }
 
 .menu-container {
-  background-color: palegoldenrod;
+  background-color: #ffffff;
 }
 @media screen and (max-width: 767px) {
   .menu-container {
@@ -483,6 +483,37 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .menu-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-wrapper {
+    gap: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .naw-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .nav-list {
   margin-top: 0;
   padding-left: 0;
@@ -497,6 +528,22 @@ body.modal-open {
           flex-direction: column;
   gap: 32px;
 }
+@media screen and (min-width: 768px) {
+  .nav-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+}
 
 .nav-link {
   text-decoration: none;
@@ -508,6 +555,34 @@ body.modal-open {
 }
 .nav-link:hover, .nav-link:focus {
   color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .nav-link {
+    font-size: 14px;
+    line-height: 1.1428571429;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .curent {
+    position: relative;
+    color: var(--accent-color);
+  }
+  .curent::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
 }
 
 .contact-list {
@@ -523,6 +598,23 @@ body.modal-open {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+}
+@media screen and (min-width: 768px) {
+  .contact-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 40px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -540,16 +632,43 @@ body.modal-open {
   line-height: 1.1764705882;
   font-weight: 500;
   letter-spacing: 0.02em;
-  font-weight: 500;
   color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .contact-link.c-tel {
+    font-size: 12px;
+    line-height: 1.1666666667;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--text-color-main);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-link.c-tel {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .contact-link.c-mail {
   font-size: 24px;
   line-height: 1.1666666667;
   font-weight: 500;
   letter-spacing: 0.02em;
-  font-weight: 500;
   color: var(--text-color-main);
+}
+@media screen and (min-width: 768px) {
+  .contact-link.c-mail {
+    font-size: 12px;
+    line-height: 1.1666666667;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-link.c-mail {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .contact-link:hover, .contact-link:focus {
   color: var(--accent-color);
@@ -557,6 +676,7 @@ body.modal-open {
 
 .contact-icon {
   fill: currentColor;
+  margin-right: 5px;
 }
 @media screen and (max-width: 767px) {
   .contact-icon {
@@ -588,6 +708,7 @@ body.modal-open {
 }
 
 .menu-soc-link {
+  text-decoration: none;
   font-size: 18px;
   line-height: 1.2222222222;
   font-weight: 500;
@@ -611,6 +732,11 @@ body.modal-open {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 80px;
+}
+@media screen and (min-width: 768px) {
+  .header__wrapper {
+    gap: 90px;
+  }
 }
 
 .hero {
