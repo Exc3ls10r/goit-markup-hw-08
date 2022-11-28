@@ -179,7 +179,7 @@
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-    gap: 40px;
+    // gap: 40px;
   }
   // gap: 32px;
 }
@@ -206,6 +206,10 @@
     }
 
     @media screen and (min-width: 1200px) {
+      @include font (14px, calc(16 / 14), 500, .02em);
+    }
+
+    @media screen and (min-width: 1200px) {
       padding-top: 32px;
       padding-bottom: 32px;
     }
@@ -218,6 +222,10 @@
 
     @media screen and (min-width: 768px) {
       @include font (12px, calc(14 / 12), 500, .02em);
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include font (14px, calc(16 / 14), 500, .02em);
     }
 
     @media screen and (min-width: 1200px) {
@@ -265,24 +273,3 @@
   @include font (18px, calc(22 / 18), 500, .02em);
   color: var(--accent-color);
 }
-
-
-
-
-
-
-
-
-// .navigation,
-// .contacts {
-//   height: 50px;
-//   width: 140px;
-// }
-
-// .navigation {
-//   outline: 1px solid teal;
-// }
-
-// .contacts {
-//   outline: 1px solid orange;
-// }
