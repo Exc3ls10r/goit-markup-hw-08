@@ -52,7 +52,7 @@
     &.is-open > .menu-wrapper {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      // justify-content: space-between;
       padding: 48px 40px;
 
       width: 480px;
@@ -98,6 +98,7 @@
 .contact-list {
   @include list;
   margin-bottom: 0;
+  margin-top: auto;
 
   display: flex;
   flex-direction: column-reverse;
@@ -113,6 +114,7 @@
 
 .contact-link {
   @include link;
+  
 
   &.c-tel {
     @include font (34px, calc(40 / 34), 500, .02em);
@@ -127,13 +129,48 @@
 
     
   }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contact-icon {
+  fill: currentColor;
   @media screen and (max-width: 767px) {
     display: none;
   }
 }
+
+.menu-soc-list {
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    @include list;
+  }
+}
+
+.menu-soc-item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.menu-soc-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-soc-link {
+  @include font (18px, calc(22 / 18), 500, .02em);
+  color: var(--accent-color);
+}
+
+
+
+
+
+
+
 
 // .navigation,
 // .contacts {
